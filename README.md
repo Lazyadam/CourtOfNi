@@ -2,13 +2,13 @@
 
 판사·피고인·배심원으로 나뉘어 "누가 범인인가"를 설득하는 온라인 파티 보드게임.
 
-- **엔진:** Unity 6 (6000.0 LTS 이상), 2D
-- **네트워크:** Netcode for GameObjects, 호스트 권한(방장 한 명이 서버 역할). 지금은 Unity Transport를 쓰고, 출시할 때 Steam P2P 트랜스포트로 바꿀 예정이다.
+- **엔진:** Unity 6.5 (6000.5), 2D
+- **네트워크:** Netcode for GameObjects 2.x (Unity 6.5 대응 버전은 2.13.x), 호스트 권한(방장 한 명이 서버 역할). 지금은 Unity Transport를 쓰고, 출시할 때 Steam P2P 트랜스포트로 바꿀 예정이다.
 - **음성:** `IVoiceService` 인터페이스만 있다. 지금은 빈 구현(`NullVoiceService`)이고, Vivox 등은 나중에 연동한다.
 
 ## 처음 열기
 
-1. Unity Hub ▸ **Add ▸ Add project from disk**에서 이 폴더를 고르고, Unity 6 에디터로 연다.
+1. Unity Hub ▸ **Add ▸ Add project from disk**에서 이 폴더를 고르고, Unity 6.5 에디터로 연다.
 2. 처음 열면 Unity가 `ProjectSettings/`와 모든 `.meta` 파일을 만든다. 이 파일들은 **커밋한다** (`Library/`, `Temp/` 등은 `.gitignore`에 들어 있다).
 3. 메뉴 **Court of Ni ▸ Create Dev Scene and Sample Data**를 실행한다. 샘플 증거물 카드 12장, 배심원 미션 4개, 규칙 에셋, 테스트 씬(`Assets/_Project/Scenes/Dev.unity`)이 만들어진다.
 4. 4명 이상으로 테스트하려면 **Window ▸ Multiplayer ▸ Multiplayer Play Mode**(Package Manager에서 `com.unity.multiplayer.playmode` 설치)로 가상 플레이어를 띄우거나, 빌드를 여러 개 실행한다. 한 명이 **호스트**를 누르고 나머지는 **접속**을 누른 뒤, 호스트가 **게임 시작**을 누르면 된다.
