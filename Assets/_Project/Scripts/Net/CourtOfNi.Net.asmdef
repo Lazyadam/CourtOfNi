@@ -5,6 +5,7 @@
         "CourtOfNi.Core",
         "CourtOfNi.Data",
         "Unity.Netcode.Runtime",
+        "Unity.Networking.Transport",
         "Unity.Collections"
     ],
     "includePlatforms": [],

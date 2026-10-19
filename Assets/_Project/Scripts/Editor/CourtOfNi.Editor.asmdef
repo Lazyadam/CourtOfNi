@@ -5,7 +5,8 @@
         "CourtOfNi.Core",
         "CourtOfNi.Data",
         "CourtOfNi.Net",
-        "Unity.Netcode.Runtime"
+        "Unity.Netcode.Runtime",
+        "Unity.Networking.Transport"
     ],
     "includePlatforms": [
         "Editor"
