@@ -1,0 +1,16 @@
+{
+    "name": "CourtOfNi.Presentation",
+    "rootNamespace": "CourtOfNi.Presentation",
+    "references": [
+        "CourtOfNi.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

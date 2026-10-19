@@ -1,0 +1,22 @@
+{
+    "name": "CourtOfNi.Editor",
+    "rootNamespace": "CourtOfNi.EditorTools",
+    "references": [
+        "CourtOfNi.Core",
+        "CourtOfNi.Data",
+        "CourtOfNi.Net",
+        "Unity.Netcode.Runtime",
+        "Unity.Networking.Transport"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
