@@ -1,0 +1,19 @@
+{
+    "name": "CourtOfNi.Net",
+    "rootNamespace": "CourtOfNi.Net",
+    "references": [
+        "CourtOfNi.Core",
+        "CourtOfNi.Data",
+        "Unity.Netcode.Runtime",
+        "Unity.Collections"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    Unity 없이 Core/Data/Presentation 코드가 Unity의 API 수준(.NET Standard 2.1, C# 9)에서 컴파일되는지 확인한다.
+    UnityEngine은 UnityStubs.cs의 최소 스텁으로 대신한다. NGO를 쓰는 Net 폴더는 Unity 에디터에서만 확인할 수 있다.
+    사용법: dotnet build tools/CompileCheck
+  -->
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <!-- 직렬화 필드는 Unity가 채우므로 CS0649(할당 안 됨)는 무시한다. -->
+    <NoWarn>$(NoWarn);CS0649</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="UnityStubs.cs" />
+    <Compile Include="../../Assets/_Project/Scripts/Core/**/*.cs" />
+    <Compile Include="../../Assets/_Project/Scripts/Data/**/*.cs" />
+    <Compile Include="../../Assets/_Project/Scripts/Presentation/**/*.cs" />
+  </ItemGroup>
+</Project>
